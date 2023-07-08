@@ -29,6 +29,9 @@ body{
     flex:1;
     padding:2rem;
 }
+/* LEFT */
+
+/* RIGHT */
 .right{
     position:relative;
     display:flex;
@@ -67,4 +70,8 @@ body{
 .right .arrows img{
     width:60px;
     height:60px;
+}
+.right .arrows img:hover{
+    scale:1.1;
+    cursor:pointer;
 }
