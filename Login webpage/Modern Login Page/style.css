@@ -10,3 +10,41 @@
     --bg-color:#e7e8ec;
     --border-color:rgba(0, 0, 0, 0.2);
 }
+body{
+    height:100vh;
+    background-color: var(--bg-color);
+    color:var(--primary-color);
+    display:grid;
+    place-items: center;
+}
+.form_container{
+    width:80%;
+    height:80%;
+    max-width:1200px;
+    background-color:#fff;
+    display:flex;
+}
+.right,
+.left{
+    flex:1;
+    padding:2rem;
+}
+.right{
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    background-image: url('photo-1545670723-196ed0954986.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(17, 23, 39, 0.3);
+    z-index:1;
+}
