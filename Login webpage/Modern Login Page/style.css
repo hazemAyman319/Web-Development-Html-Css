@@ -33,7 +33,7 @@ body{
     position:relative;
     display:flex;
     align-items:flex-end;
-    background-image: url('photo-1545670723-196ed0954986.jpg');
+    background-image: url('photo2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,4 +47,24 @@ body{
     height:100%;
     background-color: rgba(17, 23, 39, 0.3);
     z-index:1;
+}
+.right .info{
+    color:#fff;
+    z-index:2;
+}
+.right .info p{
+    margin-bottom:1rem;
+    font-size:22px;
+    line-height:1.5;
+    letter-spacing:2px;
+}
+.right .arrows{
+    margin-top:2rem;
+    display:flex;
+    justify-content: flex-end;
+    gap:10px;
+}
+.right .arrows img{
+    width:60px;
+    height:60px;
 }
