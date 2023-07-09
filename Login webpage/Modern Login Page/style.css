@@ -95,6 +95,39 @@ input[type='password']{
     border:none;
     outline:none;
     border-bottom:1px solid var(--border-color);
+    font-size: 1rem;
+}
+.actions{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size:14px;
+}
+.actions .wrapper{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.actions input{
+    accent-color: var(--primary-color);
+}
+.actions a{
+    color:var(--primary-color);
+}
+.login-btn{
+    background-color: var(--primary-color);
+    color:#fff;
+    font-size:16px;
+}
+.signup_info{
+    text-align:center;
+    font-size:14px;
+    color:var(--secondary-color);
+}
+.signup_info a{
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight:bold;
 }
 /* RIGHT */
 .right{
@@ -139,4 +172,19 @@ input[type='password']{
 .right .arrows img:hover{
     scale:1.1;
     cursor:pointer;
+}
+/* RESPONSIVE DESIGN */
+@media(max-width:992px){
+    .right{
+        display:none;
+    }
+    .login_container{
+        max-width:450px;
+    }
+}
+@media(max-width:576px){
+    .form_container{
+        width:90%;
+        height:90%;
+    }
 }
