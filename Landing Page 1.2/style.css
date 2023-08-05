@@ -1,24 +1,15 @@
-/* Common style */
-/*
-- Opacity on hover
-- section header for every section
-- section padding around every title
-- hover effect 1 (left to right)
-- hover effect 2 (top to bottom)
-- container 
- */
-
 /* General Css Style */
-
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
- body{
+body{
     font-family: 'Varela Round', sans-serif;
     font-family: 'Work Sans', sans-serif;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'montserrat' , sans-serif;
 }
  .header-content{
      overflow:hidden;   /* to solve float problem */
@@ -47,5 +38,45 @@
     text-decoration: none;
     display : block;
     padding:30px 12px;
-
 }
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.7);
+}
+/* Home Section */
+.home{
+    height:100vh;
+    background-image: url(Images/background1.jpg);
+    background-size: cover;
+    position:relative;
+}
+.home-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    text-align: center;
+    width:65%;
+}
+.home .title{
+    color:#fff;
+    font-size:3.5rem;
+    text-transform: uppercase;
+}
+.home .home-desc{
+    margin:20px 0;
+    color:white;
+    letter-spacing: 2px;
+    line-height:1.5;
+}
+/* About Section */
+/* Portfolio Section */
+/* Service Section */
+/* Prices Section */
+/* Team Section */
+/* Blog section */
+/* Contact Section */
