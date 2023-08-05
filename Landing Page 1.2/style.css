@@ -8,30 +8,44 @@
 - container 
  */
 
- *{
+/* General Css Style */
+
+*{
     margin:0;
     padding: 0;
     box-sizing: border-box;
- }
+}
 
  body{
     font-family: 'Varela Round', sans-serif;
     font-family: 'Work Sans', sans-serif;
- }
+}
+ .header-content{
+     overflow:hidden;   /* to solve float problem */
+}
  .container{
     width:80%;
     margin:auto;
- }
- .header{
-    background:gray;
- }
+}
+.header{
+    background:grey;
+}
  .header .logo{
     width:40%;
-    background:red;
     float:left;
- }
+}
  .header .nav{
     width:60%;
-    background:green;
     float:left;
- }
+    list-style:none;
+}
+ .header .nav li{
+    display:inline-block;
+}
+.header .nav li a{
+    color:#fff;
+    text-decoration: none;
+    display : block;
+    padding:30px 12px;
+
+}
