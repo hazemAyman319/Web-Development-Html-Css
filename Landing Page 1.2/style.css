@@ -7,3 +7,31 @@
 - hover effect 2 (top to bottom)
 - container 
  */
+
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+ }
+ .container{
+    width:80%;
+    margin:auto;
+ }
+ .header{
+    background:gray;
+ }
+ .header .logo{
+    width:40%;
+    background:red;
+    float:left;
+ }
+ .header .nav{
+    width:60%;
+    background:green;
+    float:left;
+ }
