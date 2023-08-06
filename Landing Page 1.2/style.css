@@ -16,7 +16,7 @@ button{
     font-family: 'Work Sans', sans-serif;
 }
  .header-content{
-     overflow:hidden;   /* to solve float problem */
+     /* overflow:hidden;   to solve float problem */
 }
  .container{
     width:80%;
@@ -35,24 +35,27 @@ button{
     width:20%;
     margin-top: 15px;
 }
+.clear{
+    clear:both;
+}
  .header .nav{
     width:60%;
     float:left;
     list-style:none;
     text-align:right;
 }
- .header .nav li{
+ .header .nav > li{
     display:inline-block;
     text-align:left;
 }
-.header .nav li a{
+.header .nav  > li > a{
     color:#fff;
     text-decoration: none;
     display : block;
     padding:30px 12px;
     font-size:16px;
 }
-.header .nav li a:after{   /* a .active with a space between them means active is a div with class called active inside */
+.header .nav > li > a:after{   /* a .active with a space between them means active is a div with class called active inside */
     content:"";
     display:block;
     width:0;
@@ -61,10 +64,10 @@ button{
     transition:width 0.5s;
     margin-top: 2px;    
 }
-.header .nav li a:hover:after{
+.header .nav > li > a:hover:after{
     width:100%;
 }
-.header .nav li a.active:after{
+.header .nav > li > a.active:after{
     width:100%;
 }
 .overlay{
@@ -80,6 +83,30 @@ button{
 }
 .hover-opacity:hover{
     opacity:0.8;
+}
+.dropdown{
+    position:relative;
+}
+.dropdown-menu{
+    position:absolute;
+    background:#6195ff;
+    width:150px;
+    text-align:center;
+    left:-50%;
+    top:70%;
+    opacity:0;
+    visibility: hidden;
+    transition:opacity 0.5s , visibility 0.5s;
+}
+.dropdown:hover .dropdown-menu{ /*when you hover on dropdown class then dropdown-menu will be appear*/
+    opacity:1;
+    visibility:visible;
+}
+.dropdown-menu a{
+    color:#fff;
+    display:block;
+    padding:10px;
+    text-decoration: none;
 }
 /* Home Section */
 .home{
