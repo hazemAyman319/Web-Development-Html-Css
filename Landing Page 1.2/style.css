@@ -43,14 +43,29 @@ button{
 }
  .header .nav li{
     display:inline-block;
-    width:75px;
-    text-align:right;
+    text-align:left;
 }
 .header .nav li a{
     color:#fff;
     text-decoration: none;
     display : block;
     padding:30px 12px;
+    font-size:16px;
+}
+.header .nav li a:after{   /* a .active with a space between them means active is a div with class called active inside */
+    content:"";
+    display:block;
+    width:0;
+    height:3px;
+    background-color:#6195ff; 
+    transition:width 0.5s;
+    margin-top: 2px;    
+}
+.header .nav li a:hover:after{
+    width:100%;
+}
+.header .nav li a.active:after{
+    width:100%;
 }
 .overlay{
     position:absolute;
