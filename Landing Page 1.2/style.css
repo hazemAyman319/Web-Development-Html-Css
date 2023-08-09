@@ -15,9 +15,9 @@ button{
     font-family: 'Varela Round', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
- .header-content{
+ /* .header-content{
      /* overflow:hidden;   to solve float problem */
-}
+
  .container{
     width:80%;
     margin:auto;
@@ -108,6 +108,41 @@ button{
     padding:10px;
     text-decoration: none;
 }
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size:35px;
+    text-transform:capitalize;
+    margin-bottom:10px;
+}
+.section-header .line{
+    display:block;
+    height:5px;
+    width:60px;
+    margin:0 auto 70px auto;
+    background-color:#6195ff;
+}
+.pd-y{
+    padding:120px 0;
+}
+.ltr-effect{
+    position:relative;
+}
+.ltr-effect:after{
+    position:absolute;
+    content:"";
+    width:0;
+    height:100%;
+    top:0;
+    left:0;
+    background:#333;
+    transition: width 0.5s;
+    z-index:-1;
+}
+.ltr-effect:hover:after{
+    width:100%;
+}
 /* Home Section */
 .home{
     height:100vh;
@@ -151,6 +186,44 @@ button{
     color:white;
 }
 /* About Section */
+.about{
+
+}
+.about-content{
+    overflow:hidden;
+}
+.about-item{
+    width:30%;
+    float:left;
+    text-align: center;
+    border:1px solid #e8e8e8;
+    padding:50px 25px;
+}
+
+.about-item:hover .about-item-title{
+    color:#fff;
+}
+.about-item.mg{
+    margin:0 5%;
+}
+.about-item .icon{
+    color:#6195ff;
+    margin-bottom:10px;
+}
+.about-item-title{
+    text-transform:capitalize;
+    margin-bottom:15px;
+    transition:color 0.5s;
+}
+.about-item-desc{
+    line-height:1.6;
+    margin-bottom:10px;
+    color:#999;
+}
+.about-item-link{
+    color:#6195ff;
+    text-transform: capitalize;
+}
 /* Portfolio Section */
 /* Service Section */
 /* Prices Section */
