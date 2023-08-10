@@ -244,21 +244,63 @@ button{
     left:0;
     width:100%;
     height:100%;
-    background-color:rgba(0,0,0,0.6)
+    background-color:rgba(0,0,0,0.6);
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 0.5s ,visibility 0.5s;
+}
+.portfolio-item:hover .layer-content{
+    opacity:1;
+    visibility: visible;
 }
 .portfolio-item .layer-info{
     position:absolute;
     left:50%;
     top:50%;
     transform:translate(-50% , -50%);
-    width:60%;
+    width:80%;
     text-align:center;
+}
+.layer-content .category{
+    color:#6195ff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom:5px;
+    position:relative;
+    top:10px;
+    transition: top 0.3s;
+}
+.layer-content-title{
+    font-size:20px;
+    color:#fff;
+    margin-bottom:10px;
+    position:relative;
+    top:10px;
+    transition: top 0.4s; /* or you can use transition delay to make them appear after each others*/
+}
+.layer-content a i{
+    line-height:40px;
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background-color: #6195ff;
+}
+.layer-content a{
+    color: #fff;
+    position:relative;
+    top:10px;
+    transition: top 0.5s;
 }
 .portfolio-item.mg{
     margin:0 5%;
 }
 .portfolio-item img{
     width:100%;
+}
+.portfolio-item:hover .layer-content-title,
+.portfolio-item:hover .layer-content a,
+.portfolio-item:hover .layer-content .category{
+    top:0;
 }
 /* Service Section */
 /* Prices Section */
