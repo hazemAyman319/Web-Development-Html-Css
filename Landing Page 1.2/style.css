@@ -18,7 +18,7 @@ button{
  /* .header-content{
      /* overflow:hidden;   to solve float problem */
 
- .container{
+.container{
     width:80%;
     margin:auto;
 }
@@ -38,7 +38,7 @@ button{
 .clear{
     clear:both;
 }
- .header .nav{
+.header .nav{
     width:60%;
     float:left;
     list-style:none;
@@ -186,9 +186,9 @@ button{
     color:white;
 }
 /* About Section */
-.about{
+/* .about{
 
-}
+} */
 .about-content{
     overflow:hidden;
 }
@@ -302,7 +302,45 @@ button{
 .portfolio-item:hover .layer-content .category{
     top:0;
 }
-/* Service Section */
+/* offer Section */
+.offer{
+
+}
+/* .offer-content{
+    overflow:hidden;
+} */
+.offer-item{
+    width:30%;
+    float:left;
+    margin-bottom:20px;
+    border:1px solid #e8e8e8;
+    padding:20px 15px 30px 70px;
+    position:relative;
+}
+.offer-item.mg{
+    margin:0 5%;
+}
+.offer-item .icon{
+    position:absolute;
+    left:15px;
+    top:30px;
+    color:#6195ff;
+}
+.offer-item-title{
+    text-transform:capitalize;
+    margin-bottom: 15px;
+    transition: color 0.5s;
+}
+.offer-item-desc{
+    text-transform:capitalize;
+    margin-bottom: 15px;
+    line-height:1.6;
+    color:#999;
+}
+.offer-item:hover .offer-item-title
+{
+    color:#fff;
+}
 /* Prices Section */
 /* Team Section */
 /* Blog section */
