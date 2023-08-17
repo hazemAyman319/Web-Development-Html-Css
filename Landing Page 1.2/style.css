@@ -428,6 +428,22 @@ button{
 .number-item-text{
     color:#fff;
 }
+/* prices section */
+.pricing{
+
+}
+.pricing-plans{
+    overflow:hidden;
+}
+.pricing-item{
+    width:30%;
+    float:left;
+    padding:20px 15px;
+    border:1px solid #e8e8e8
+}
+.pricing-item.mg{
+    margin:0 5%;
+}
 /* Team Section */
 /* Blog section */
 /* Contact Section */
