@@ -97,6 +97,7 @@ button{
     opacity:0;
     visibility: hidden;
     transition:opacity 0.5s , visibility 0.5s;
+    list-style: none;
 }
 .dropdown:hover .dropdown-menu{ /*when you hover on dropdown class then dropdown-menu will be appear*/
     opacity:1;
@@ -142,6 +143,24 @@ button{
 }
 .ltr-effect:hover:after{
     width:100%;
+}
+
+.tb-effect{
+    position:relative;
+}
+.tb-effect:after{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:0;
+    top:0;
+    left:0;
+    background:#333;
+    transition: height 0.5s;
+    z-index:-1;
+}
+.tb-effect:hover:after{
+    height:100%;
 }
 /* Home Section */
 .home{
@@ -442,12 +461,19 @@ button{
     border:1px solid #e8e8e8;
     text-align:center;
 }
+.pricing-item:hover .pricing-item-permonth{
+    color:#fff;
+}
+.pricing-item:hover .pricing-item-text{
+    color:#fff;
+}
 .pricing-item.mg{
     margin:0 5%;
 }
 .pricing-item-text{
     text-transform: uppercase;
-    font-size:14px;
+    font-size:20px;
+    transition:color 0.5s;
 }
 .pricing-item-permonth{
     width:130px;
@@ -456,6 +482,7 @@ button{
     padding:20px 0;
     border:2px solid #6195ff;
     border-radius: 50%;
+    transition:color 0.5s;
 }
 .pricing-item-permonth .dollar{
     font-size:50px;
