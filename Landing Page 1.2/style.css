@@ -508,6 +508,44 @@ button{
     margin:15px auto 0 auto;
     color:#7ba7ff;
 }
-/* Team Section */
+/* Testimonial Section */
+.testimonial{
+    position:relative;
+    background-image: url("Images/background3.jpg");
+    background-attachment: fixed;
+    height:400px;
+}
+.testimonial-content{
+    overflow:hidden;
+    padding:120px 0;
+    width:60%;
+    margin:auto;
+}
+.testimonial-item{
+    width:50%;
+    float:left;
+    color:#fff;
+    margin:auto;
+}
+.testimonial-item .testimonial-top{
+    padding:10px 2px 40px 100px;
+    position:relative;
+}
+.testimonial-item .testimonial-top img{
+    position:absolute;
+    left:10px;
+    top:10px;
+    border-radius: 50%;
+}
+.testimonial-item .testimonial-top h2{
+    margin:5px 0;
+}
+.testimonial-item .testimonial-top span{
+    color:#6195ff;
+}
+.testimonial-desc{
+    line-height:1.5;
+    font-size:17px;
+}
 /* Blog section */
 /* Contact Section */
