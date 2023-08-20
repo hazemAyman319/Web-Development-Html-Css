@@ -616,4 +616,76 @@ button{
     color:#6195ff;
 }
 /* Blog section */
+.blog{
+    background:#f8f8f8;
+}
+.blog-content{
+    overflow:hidden;
+}
+.blog-item{
+    width:30%;
+    float:left;
+    background:#fff;
+}
+.blog-item-img img{
+    width:100%;
+}
+.blog-info{
+    padding:20px;
+}
+.blog-list{
+    list-style:none;
+    margin:10px 0;
+}
+.blog-list li{
+    display:inline-block;
+    margin:0 5px;
+}
+.blog-list li i{
+    color:#6195ff
+}
+.blog-title{
+    font-weight:bold;
+    margin:20px 0;
+}
+.blog-desc{
+    color:#999;
+    margin-bottom:10px;
+    line-height:1.5;
+}
+.blog-link{
+    color:#6195ff;
+}
+.blog-item.mg{
+    margin:0 5%;
+}
 /* Contact Section */
+/* footer section */
+.footer{
+    background:#1c1d21;
+    text-align:center;
+    padding:60px 0;
+}
+.footer-links{
+    list-style:none;
+    margin:20px 0;
+}
+.footer-links li{
+    display:inline-block;
+
+}
+.footer-links li a{
+    display:block;
+    width:50px;
+    height:50px;
+    background:#6195ff;
+    color:#fff;
+    margin:0 5px;
+}
+.footer-links li a i{
+    line-height:50px;
+}
+.footer p{
+    color:#fff;
+    text-transform:uppercase;
+}
