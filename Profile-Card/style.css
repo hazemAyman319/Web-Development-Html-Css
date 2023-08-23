@@ -24,7 +24,7 @@ body{
 }
 .card{
     background-color: #fff;
-    max-width:360px;
+    max-width:400px;
     overflow:hidden;
     border-radius:2rem;
     box-shadow:0 15px 25px rgba(0 , 0 , 0 , 0.5);
@@ -34,8 +34,31 @@ body{
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
-    height:200px;
+    height:365px;
     display:flex;
     justify-content:center;
     align-items:flex-end;
+}
+.card .banner .imgBox{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    border: 5px solid #fff;
+    transform:translateY(50%);
+    z-index:1;
+    box-shadow:0 8px 16px rgba(0 ,0 ,0 ,0.3);
+    transition:transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card .banner .imgBox img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.card .banner .imgBox:hover{
+    transform:translateY(50%) scale(1.2);
+}
+.card .card-body{
+    position:relative;
+    padding:100px 30px 40px;
 }
