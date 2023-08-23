@@ -16,3 +16,26 @@
     --grey:#a0a0a0;
     --pink:#ff9eaa;
 }
+body{
+    background:linear-gradient(to bottom right , #fff , var(--pink));
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+}
+.card{
+    background-color: #fff;
+    max-width:360px;
+    overflow:hidden;
+    border-radius:2rem;
+    box-shadow:0 15px 25px rgba(0 , 0 , 0 , 0.5);
+}
+.card .banner{
+    background:url('Images/Hazem2.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
