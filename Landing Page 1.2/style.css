@@ -1,4 +1,7 @@
 /* General Css Style */
+:root{
+    --maincolor:#6195ff;
+}
 *{
     margin:0;
     padding: 0;
@@ -26,6 +29,7 @@ button{
     position:fixed;
     z-index:10;
     width:100%; 
+    background:rgba(0,0,0,0.5);
 }
  .header .logo{
     width:40%;
@@ -55,12 +59,15 @@ button{
     padding:30px 12px;
     font-size:16px;
 }
+ul{
+    list-style:none;
+}
 .header .nav > li > a:after{   /* a .active with a space between them means active is a div with class called active inside */
     content:"";
     display:block;
     width:0;
     height:3px;
-    background-color:#6195ff; 
+    background-color:var(--maincolor); 
     transition:width 0.5s;
     margin-top: 2px;    
 }
@@ -89,7 +96,7 @@ button{
 }
 .dropdown-menu{
     position:absolute;
-    background:#6195ff;
+    background:var(--maincolor);
     width:150px;
     text-align:center;
     left:-50%;
@@ -122,7 +129,7 @@ button{
     height:5px;
     width:60px;
     margin:0 auto 70px auto;
-    background-color:#6195ff;
+    background-color:var(--maincolor);
 }
 .pd-y{
     padding:120px 0;
@@ -201,7 +208,7 @@ button{
     background-color: white;
 }
 .home .btn-learn{
-    background-color: #6195ff;
+    background-color: var(--maincolor);
     color:white;
 }
 /* About Section */
@@ -240,7 +247,7 @@ button{
     color:#999;
 }
 .about-item-link{
-    color:#6195ff;
+    color:var(--maincolor);
     text-transform: capitalize;
 }
 /* Portfolio Section */
@@ -281,7 +288,7 @@ button{
     text-align:center;
 }
 .layer-content .category{
-    color:#6195ff;
+    color:var(--maincolor);
     text-transform: uppercase;
     display: block;
     margin-bottom:5px;
@@ -302,7 +309,7 @@ button{
     display:inline-block;
     width:40px;
     height:40px;
-    background-color: #6195ff;
+    background-color: var(--maincolor);
 }
 .layer-content a{
     color: #fff;
@@ -343,7 +350,7 @@ button{
     position:absolute;
     left:15px;
     top:30px;
-    color:#6195ff;
+    color:var(--maincolor);
 }
 .offer-item-title{
     text-transform:capitalize;
@@ -389,8 +396,8 @@ button{
     color:#999;
 }
 .service-list li i{
-    border: 1px solid #6195ff;
-    color: #6195ff;
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
     height: 25px;
     border-radius: 221%;
     padding: 10px 10px 10px 3px;
@@ -412,10 +419,10 @@ button{
     border-radius:50%;
 }
 .service-bullets li.active{
-    background-color:#6195ff;
+    background-color:var(--maincolor);
 }
 .service-bullets li:hover{
-    background-color:#6195ff;
+    background-color:var(--maincolor);
 }
 /* Numbers Section */
 .numbers{
@@ -435,7 +442,7 @@ button{
     text-align:center;
 }
 .number-item .icon{
-    color:#6195ff;
+    color:var(--maincolor);
     margin-bottom: 15px;
 }
 .number-item-title{
@@ -480,7 +487,7 @@ button{
     height:130px;
     margin:40px auto; 
     padding:20px 0;
-    border:2px solid #6195ff;
+    border:2px solid var(--maincolor);
     border-radius: 50%;
     transition:color 0.5s;
 }
@@ -541,7 +548,7 @@ button{
     margin:5px 0;
 }
 .testimonial-item .testimonial-top span{
-    color:#6195ff;
+    color:var(--maincolor);
 }
 .testimonial-desc{
     line-height:1.5;
@@ -613,7 +620,7 @@ button{
     transition:color 0.5s;
 }
 .team-item:hover .team-info-text{
-    color:#6195ff;
+    color:var(--maincolor);
 }
 /* Blog section */
 .blog{
@@ -642,7 +649,7 @@ button{
     margin:0 5px;
 }
 .blog-list li i{
-    color:#6195ff
+    color:var(--maincolor);
 }
 .blog-title{
     font-weight:bold;
@@ -654,12 +661,121 @@ button{
     line-height:1.5;
 }
 .blog-link{
-    color:#6195ff;
+    color:var(--maincolor);
 }
 .blog-item.mg{
     margin:0 5%;
 }
 /* Contact Section */
+.contact-overflow{
+    overflow:hidden;
+}
+.contact-us-content{
+    width:100%;
+}
+.contact-us-content .phone-box{
+    padding:40px 15px;
+    width:30%;
+    float:left;
+    text-align:center;
+    line-height:1.5;
+}
+.contact-us-content .phone-box i{
+    margin:15px 0;
+    color:#6195ff;
+}
+.contact-us-content .phone-box p{
+    margin:15px 0;
+    color:#999;
+}
+.contact-us-content .email-box{
+    padding:40px 15px;
+    width:30%;
+    float:left;
+    text-align:center;
+    line-height:1.5;
+}
+.contact-us-content .email-box i{
+    margin:15px 0;
+    color:#6195ff;
+}
+.contact-us-content .email-box p{
+    margin:15px 0;
+    color:#999;
+}
+.contact-us-content .address-box{
+    padding:40px 15px;
+    width:30%;
+    float:left;
+    text-align:center;
+    line-height:1.5;
+}
+.contact-us-content .address-box i{
+    margin:15px 0;
+    color:#6195ff;
+}
+.contact-us-content .address-box p{
+    margin:15px 0;
+    color:#999;
+}
+.email-box.mg{
+    margin:0 5%;
+}
+.form-box{
+    width:75%;
+    margin:auto;
+    height:200px;
+    overflow:hidden;
+}
+.contact-overflow .form-box .top-box{
+    margin-bottom:7%;
+}
+.contact-overflow .form-box .middle-box{
+    margin-bottom:2%;
+}
+.contact-overflow .form-box .top-box .name-box{
+    width:49%;
+    float:left;
+    margin:0% 1% 0% 0%;
+    height:35px;
+    padding:10px;
+    border-style: none;
+    background-color: #e8e8e8;
+}
+.contact-overflow .form-box .top-box .email-box{
+    width:49%;
+    float:left;
+    margin:0% 0% 0% 1%;
+    height:35px;
+    padding:10px;
+    border-style: none;
+    background-color: #e8e8e8;
+}
+.contact-overflow .form-box .middle-box{
+    width:100%;
+}
+.contact-overflow .form-box .middle-box .subject-box{
+    width:100%;
+    height:35px;
+    padding:10px;
+    border-style: none;
+    background-color: #e8e8e8;
+}
+.contact-overflow .form-box .bottom-box{
+    width:100%;
+}
+.contact-overflow .form-box .bottom-box .message-box{
+    width:100%;
+    height:100px;
+    border-style: none;
+    background-color: #e8e8e8;
+    position:relative;
+}
+.contact-overflow .form-box .bottom-box .message-box::placeholder{
+    top:10px;
+    left:10px;
+    position: absolute;
+}
 /* footer section */
 .footer{
     background:#1c1d21;
@@ -678,7 +794,7 @@ button{
     display:block;
     width:50px;
     height:50px;
-    background:#6195ff;
+    background:var(--maincolor);
     color:#fff;
     margin:0 5px;
 }
