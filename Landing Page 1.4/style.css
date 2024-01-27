@@ -808,8 +808,6 @@ header nav .form i{
     height:100%;
     background-color: rgb(0 0 0 / 50%);
 }
-<<<<<<< HEAD
-=======
 .subscribe .container{
     position:relative;
     display:flex;
@@ -867,5 +865,4 @@ header nav .form i{
         margin:30px 0 0;
     }
 }
->>>>>>> bf56c551f2a884c750049b29fff0249fe32a94b0
 /* End Subscribe */
