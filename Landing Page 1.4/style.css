@@ -875,6 +875,11 @@ header nav .form i{
     display:flex;
     justify-content:space-between;
 }
+@media(max-width:767px){
+    .contact .content{
+        flex-direction:column;
+    }
+}
 .contact .content form{
     flex-basis:70%;
 }
@@ -904,6 +909,12 @@ header nav .form i{
 .contact .content .info{
     flex-basis:25%;
 }
+@media(max-width:767px){
+    .contact .content .info{
+        order:-1;
+        text-align:center;
+    }
+}
 .contact .content .info h4{
     text-transform: uppercase;
     margin-bottom:30px;
@@ -916,9 +927,20 @@ header nav .form i{
     margin-bottom:10px;
 }
 .contact .content .info h4:nth-of-type(2){
-    
+    margin-top:90px;
+}
+@media(max-width:767px){
+    .contact .content .info h4:nth-of-type(2){
+        margin-top:30px;
+    }
 }
 .contact .content .info address{
-    
+    line-height:2;
+    color:#777;
+}
+@media(max-width:767px){
+    .contact .content .info address{
+        margin-bottom:40px;
+    }
 }
 /* End Contact */
