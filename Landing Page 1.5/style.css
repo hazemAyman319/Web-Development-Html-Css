@@ -819,6 +819,48 @@ ul{
     background-color: var(--main-color);
 }
 /* End Skills */
+/* Start Work-Steps */
+.work-steps{
+    padding-top:var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position:relative;
+    background-color:var(--section-background);
+}
+.work-steps .container{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+} 
+.work-steps .image{
+    max-width:100%;
+    margin-right: 100px;
+} 
+.work-steps .info .box{
+    background-color:#f6f5f5;
+    padding:30px;
+    margin-bottom:20px;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    border:2px solid white;
+    position:relative;
+    z-index:1;
+} 
+.work-steps .info .box img{
+    width:64px;
+    margin-right:20px;
+}
+.work-steps .info .box h3{
+    margin:0;
+    font-size:22px;
+} 
+.work-steps .info .box p{
+    color:#777;
+    line-height:1.7;
+    margin:10px 0 0;
+    font-size:18px;
+}
+/* End Work-Steps */
 @keyframes up-and-down{
     0% , 100%{
         top:0;
